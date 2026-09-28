@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Odontológica Sorriso Nativo | Excelência e Cuidado</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dental: {
+                            50: '#f9f6f0',
+                            100: '#f0e9dc',
+                            200: '#e1d4be',
+                            800: '#4a4033',
+                            900: '#2d261e',
+                            accent: '#8c7355',
+                            soft: '#d4c5ab'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['DM Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dental-50 text-dental-900 font-sans antialiased selection:bg-dental-200">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-dental-50/90 backdrop-blur-md border-b border-dental-200">
+        <div class="max-width max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full bg-dental-accent flex items-center justify-center text-white font-serif text-xl font-bold">SN</div>
+                <span class="font-serif text-2xl tracking-tight text-dental-900 font-bold">Sorriso Nativo</span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-dental-800">
+                <a href="#servicos" class="hover:text-dental-accent transition-colors">Especialidades</a>
+                <a href="#sobre" class="hover:text-dental-accent transition-colors">A Clínica</a>
+                <a href="#equipe" class="hover:text-dental-accent transition-colors">Especialistas</a>
+                <a href="#contato" class="hover:text-dental-accent transition-colors">Localização</a>
+            </nav>
+            <a href="#contato" class="bg-dental-900 text-dental-50 px-6 py-3 rounded-full text-sm font-medium hover:bg-dental-accent transition-all shadow-sm">
+                Agendar Consulta
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative pt-24 pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-8">
+                <div class="inline-flex items-center space-x-2 bg-dental-100 px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase text-dental-800">
+                    <span>Odontologia de Alta Precisão</span>
+                </div>
+                <h1 class="font-serif text-5xl lg:text-7xl font-bold leading-[1.1] text-dental-900">
+                    Seu sorriso com a naturalidade que você merece.
+                </h1>
+                <p class="text-lg text-dental-800/80 max-w-xl leading-relaxed">
+                    Unimos tecnologia de ponta, estética refinada e atendimento humanizado para transformar sua experiência no dentista.
+                </p>
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#contato" class="bg-dental-900 text-dental-50 text-center px-8 py-4 rounded-full font-medium hover:bg-dental-accent transition-all shadow-lg shadow-dental-900/10">
+                        Marcar Avaliação
+                    </a>
+                    <a href="#servicos" class="border border-dental-200 text-dental-900 text-center px-8 py-4 rounded-full font-medium hover:bg-dental-100 transition-all">
+                        Conhecer Especialidades
+                    </a>
+                </div>
+            </div>
+            <div class="lg:col-span-5 relative">
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl bg-dental-200 aspect-[4/5]">
+                    <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800" alt="Clínica Moderna" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="servicos" class="py-24 bg-white border-t border-dental-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-2xl mb-16">
+                <span class="text-xs font-semibold tracking-widest uppercase text-dental-accent block mb-3">Especialidades</span>
+                <h2 class="font-serif text-4xl font-bold text-dental-900">Cuidados completos para sua saúde bucal e estética.</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-3xl bg-dental-50 border border-dental-200/60 hover:border-dental-accent transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-dental-100 flex items-center justify-center text-dental-accent mb-6 font-serif text-xl font-bold">01</div>
+                    <h3 class="font-serif text-2xl font-bold text-dental-900 mb-3">Implantes Dentários</h3>
+                    <p class="text-dental-800/70 leading-relaxed">Recupere a firmeza, a função e a estética do seu sorriso com técnicas avançadas e implantes guiados por computador.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-dental-50 border border-dental-200/60 hover:border-dental-accent transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-dental-100 flex items-center justify-center text-dental-accent mb-6 font-serif text-xl font-bold">02</div>
+                    <h3 class="font-serif text-2xl font-bold text-dental-900 mb-3">Lentes de Contato</h3>
+                    <p class="text-dental-800/70 leading-relaxed">Transformações estéticas sutis ou marcantes com lâminas de porcelana ultrafinas desenhadas sob medida para o seu rosto.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-dental-50 border border-dental-200/60 hover:border-dental-accent transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-dental-100 flex items-center justify-center text-dental-accent mb-6 font-serif text-xl font-bold">03</div>
+                    <h3 class="font-serif text-2xl font-bold text-dental-900 mb-3">Ortodontia Invisível</h3>
+                    <p class="text-dental-800/70 leading-relaxed">Alinhadores transparentes de última geração para corrigir o posicionamento dos dentes com conforto e total discrição.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dental-900 text-dental-50 py-16">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center space-x-3 mb-6 md:mb-0">
+                <div class="w-10 h-10 rounded-full bg-dental-accent flex items-center justify-center text-white font-serif text-xl font-bold">SN</div>
+                <span class="font-serif text-2xl tracking-tight text-white font-bold">Sorriso Nativo</span>
+            </div>
+            <p class="text-sm text-dental-50/60">© 2026 Clínica Odontológica Sorriso Nativo. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
